@@ -50,13 +50,13 @@ For my models, I decided to prioritize recall score. This is because I wanted to
 In addition, I used TomekLinks and class_weight = balanced to deal with class imbalance.
 
 ### KNN
-* My best KNN model ended up with a recall score of .369.
+* My highest-scoring of my KNN models ended up with a recall score of .369.
 
 ### Decision Tree
-* My strongest Decision Tree model ended up with a recall score of .762.
+* My highest-scoring of my Decision Tree models ended up with a recall score of .762.
 
 ### Random Forest
-* I ended up with two strong Random Forest models. One had a recall score of .820 and the other had a recall score of .828. 
+* My two best models ended up being Random Forest models. One had a recall score of .820 and the other had a recall score of .828. 
 
 ### Voting Classifier
 * Using hard voting, my VotingClassifier ended up with a recall score of .754.
