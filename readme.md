@@ -87,7 +87,7 @@ From our best model, we learned that international plan, total day charge, and c
 
 * Although my recall score was quite high, it came at the relative expense of my precision score. In the future, I would like to create a model that has both high recall and high precision.
 
-* I would also like to investigate further to see why so many customer service calls are being made by SyriaTel customers
+* I would also like to create a model that predicts customer service calls to investigate what causes SyriaTel customers to call customer service so frequently.
 
 
 
