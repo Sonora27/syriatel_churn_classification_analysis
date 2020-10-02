@@ -70,6 +70,12 @@ In addition, I used TomekLinks and class_weight = balanced to deal with class im
 
 * In the end, I chose the Random Forest model with the  recall score of .820. I did so because it still had a very strong recall score, but it did not sacrifice F1 score in the process (.730). As you can see in the above confusion matrix, this model does not have any overpowering weaknesses.
 
+## Predicing on Entire Dataset
+
+<img src="https://raw.githubusercontent.com/Sonora27/syriatel_churn_classification_analysis/master/pngs/Churn%20Confusion%20Matrix%20Entire%20Dataset.png">
+
+Running this model on the entire dataset, my recall score went up to .850.
+
 ## Conclusions
 
 From our best model, we learned that international plan, total day charge, and customer service calls were the most important features in correctly predicting churn rate. After performing post-modeling analysis, I was able to draw these conclusions:
