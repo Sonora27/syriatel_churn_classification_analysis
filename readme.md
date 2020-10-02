@@ -24,7 +24,21 @@ For my analysis, I utilized a dataset that was given to me by SyriaTel on their 
 
 After performing exploratory data analysis, there were a few hypotheses I wanted to test:
 
-	* Are customers that have an international plan more likely to churn than customers who do not?
+* Are customers that have an international plan more likely to churn than customers who do not?
+
+	<img src="https://raw.githubusercontent.com/Sonora27/syriatel_churn_classification_analysis/master/pngs/Churn%20Rate%20by%20International%20Plan.png">
+
+	* From my proportion test with a test statistic of 15.00 and a p-value of 7.15x10^-51, I can reject the null hypothesis that the proportions are equal for people that have an international plan and those who do not. As a result, I can conclude that international plan will be an important feature for modeling.
+
+* Is area code an important feature in predicting customer churn?
+
+	<img src="https://raw.githubusercontent.com/Sonora27/syriatel_churn_classification_analysis/master/pngs/Churn%20Rate%20by%20Area%20Code.png">
+
+	* From my one-way ANOVA test with a F-statistic of .089 and a P-value of .915 means that I have failed to reject the null hypothesis that the difference in churn rate for each area code is not statistically significant. As a result, I determined that area code is not an important feature and I did not use it for modeling.
+
+
+
+
 
 
 
