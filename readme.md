@@ -74,10 +74,20 @@ In addition, I used TomekLinks and class_weight = balanced to deal with class im
 
 From our best model, we learned that international plan, total day charge, and customer service calls were the most important features in correctly predicting churn rate. After performing post-modeling analysis, I was able to draw these conclusions:
 
-	<img src="https://raw.githubusercontent.com/Sonora27/syriatel_churn_classification_analysis/master/pngs/Churn%20Rate%20by%20Quality%20of%20Life.png">
+<img src="https://raw.githubusercontent.com/Sonora27/syriatel_churn_classification_analysis/master/pngs/Churn%20Rate%20by%20Day%20Charge%20Amount.png">
+
+* Customers with large day charges are far more likely to churn than customers who do not have large day charges. SyriaTel needs to reanalyze how much it charges for day minutes. This suggests that day rates are so high that frequent day users end up leaving SyriaTel .  If they end up lowering day minute rates, they could justify this reduction by raising their international rates. This would also reduce churn rate because there would be less customers that sign up for SyriaTel just for their international plan and end up leaving shortly thereafter.
 
 
+<img src="https://raw.githubusercontent.com/Sonora27/syriatel_churn_classification_analysis/master/pngs/Frequency%20of%20Customer%20Service%20Calls.png">
 
+* As the above graph shows, there is a high number of SyriaTel customers that are making frequent customer service calls. These frequent customer service callers are more likely to churn. There is some kind of service quality or billing issue that causes SyriaTel customers to call customer service so frequently. SyriaTel should investigate this further to reduce their churn rate.
+
+## Next Steps
+
+* Although my recall score was quite high, it came at the relative expense of my precision score. In the future, I would like to create a model that has both high recall and high precision.
+
+* I would also like to investigate further to see why so many customer service calls are being made by SyriaTel customers
 
 
 
