@@ -36,6 +36,45 @@ After performing exploratory data analysis, there were a few hypotheses I wanted
 
 	* From my one-way ANOVA test with a F-statistic of .089 and a P-value of .915 means that I have failed to reject the null hypothesis that the difference in churn rate for each area code is not statistically significant. As a result, I determined that area code is not an important feature and I did not use it for modeling.
 
+* Does living in a state with a high quality of life make a customer less likely to churn?
+
+	<img src="https://raw.githubusercontent.com/Sonora27/syriatel_churn_classification_analysis/master/pngs/Churn%20Rate%20by%20Quality%20of%20Life.png">
+
+
+	* From my proportion test with a test statistic of -.40 and a P-Value .689, I was unable to reject the null hypothesis that there is not a statistically signifcant difference in churn rate for customers that live in a top quality of life states vs customers that do not. As a result, I did not use this feature in my final model.
+
+## Modeling
+
+For my models, I decided to prioritize recall score. This is because I wanted to reduce False Negatives. In other words, I do not want to predict a customer will not churn when they do end up in fact churning. 
+
+In addition, I used TomekLinks and class_weight = balanced to deal with class imbalance.
+
+### KNN
+* My best KNN model ended up with a recall score of .369.
+
+### Decision Tree
+* My strongest Decision Tree model ended up with a recall score of .762.
+
+### Random Forest
+* I ended up with two strong Random Forest models. One had a recall score of .820 and the other had a recall score of .828. 
+
+### Voting Classifier
+* Using hard voting, my VotingClassifier ended up with a recall score of .754.
+
+### XGBOOST
+* Using XGBOOST, I ended up with a recall score of .754.
+
+## Confusion Matrix of Final Model
+
+<img src="https://raw.githubusercontent.com/Sonora27/syriatel_churn_classification_analysis/master/pngs/Churn%20Confusion%20Matrix.png">
+
+* In the end, I chose the Random Forest model with the  recall score of .820. I did so because it still had a very strong recall score, but it did not sacrifice F1 score in the process (.730). As you can see in the above confusion matrix, this model does not have any overpowering weaknesses.
+
+## Conclusions
+
+From our best model, we learned that international plan, total day charge, and customer service calls were the most important features in correctly predicting churn rate. After performing post-modeling analysis, I was able to draw these conclusions:
+
+	<img src="https://raw.githubusercontent.com/Sonora27/syriatel_churn_classification_analysis/master/pngs/Churn%20Rate%20by%20Quality%20of%20Life.png">
 
 
 
