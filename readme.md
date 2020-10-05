@@ -12,7 +12,7 @@ I have been contracted by SyriaTel to create a model that predicts customer chur
 
 ## Repository Structure
 * pngs -- folder that contains visualizations that were vital to my analysis
-* jupyter_notebooks - contain three notebooks: EDA_STAT_TEST, knn_modeling, dt_rf_modeling
+* jupyter_notebooks - contain four notebooks: EDA_STAT_TEST, knn_modeling, dt_rf_modeling, and Post_Model_Analysis
 * README.md
 * presentation.pdf -- contains pdf version of project presentation
 
