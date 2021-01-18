@@ -1,6 +1,6 @@
 # Predicting Customer Churn for SyriaTel
 
-Jose Ramirez
+Joe Ramirez
 
 Sources: [Kaggle](https://www.kaggle.com/becksddf/churn-in-telecoms-dataset?select=bigml_59c28831336c6604c800002a.csv)
 
@@ -8,7 +8,7 @@ Sources: [Kaggle](https://www.kaggle.com/becksddf/churn-in-telecoms-dataset?sele
 
 SyriaTel has a significant issue with customer churn, which means that a customer will stop doing business with SyriaTel in the very near future. Major cellphone companies have churn rates that rarely exceed 2% in modern times, yet SyriaTel's churn rate is over 14%! 
 
-I have been contracted by SyriaTel to create a model that predicts customer churn in order for them to improve their ability to retain their customers.
+The goal of this project is to create a model for SyriaTel that predicts customer churn in order for them to improve their ability to retain their customers.
 
 ## Repository Structure
 * pngs -- folder that contains visualizations that were vital to my analysis
@@ -18,7 +18,7 @@ I have been contracted by SyriaTel to create a model that predicts customer chur
 
 ## Data
 
-For my analysis, I utilized a dataset that was given to me by SyriaTel on their customer churn data. This dataset had 3,333 observations and 20 features. After performing data cleaning, statistical testing, and modeling, I was able to pair this down to 13 features.
+For my analysis, I utilized a dataset that was given to me by SyriaTel on their customer churn data. This dataset had 3,333 observations and 20 features. After performing data cleaning, statistical testing, and modeling, I was able to pare this down to 13 features.
 
 ## Statistical Tests
 
@@ -56,7 +56,7 @@ In addition, I used TomekLinks and class_weight = balanced to deal with class im
 * My highest-scoring of my Decision Tree models ended up with a recall score of .762.
 
 ### Random Forest
-* My two best models ended up being Random Forest models. One had a recall score of .820 and the other had a recall score of .828. 
+* My two Random Forest models were able to achieve my highest recall scores. One had a recall score of .820 and the other had a recall score of .828. 
 
 ### Voting Classifier
 * Using hard voting, my VotingClassifier ended up with a recall score of .754.
@@ -68,7 +68,7 @@ In addition, I used TomekLinks and class_weight = balanced to deal with class im
 
 <img src="https://raw.githubusercontent.com/Sonora27/syriatel_churn_classification_analysis/master/pngs/Churn%20Confusion%20Matrix.png">
 
-* In the end, I chose the Random Forest model with the  recall score of .820. I did so because it still had a very strong recall score, but it did not sacrifice F1 score in the process (.730). As you can see in the above confusion matrix, this model does not have any overpowering weaknesses.
+* In the end, I chose the Random Forest model with the  recall score of .820. I did so because it still had a very strong recall score, but it did not sacrifice F1 score in the process (.730). As you can see in the above confusion matrix, this model does not have any glaring weaknesses.
 
 ## Predicting on Entire Dataset
 
